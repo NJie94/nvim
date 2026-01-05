@@ -1,2 +1,2 @@
-# 💤 LazyVim
-
+# nvim
+Pesonal Nvim lua config
