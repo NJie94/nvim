@@ -18,6 +18,16 @@ require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+    { import = "lazyvim.plugins.extras.lang.clangd" }, -- C/C++ (clangd + clangd_extensions, etc.) :contentReference[oaicite:1]{index=1}
+    { import = "lazyvim.plugins.extras.lang.cmake" },  -- CMake LSP + tools :contentReference[oaicite:2]{index=2}
+    { import = "lazyvim.plugins.extras.dap.core" },    -- Debugging UI/keymaps :contentReference[oaicite:3]{index=3}
+
+    -- Future languages
+    { import = "lazyvim.plugins.extras.lang.rust" },   -- Rust (rustaceanvim, crates, etc.) :contentReference[oaicite:4]{index=4}
+    { import = "lazyvim.plugins.extras.lang.go" },     -- Go (gopls + go tools) :contentReference[oaicite:5]{index=5}
+
+    -- (Optional but useful)
+    { import = "lazyvim.plugins.extras.test.core" },   -- Neotest core :contentReference[oaicite:6]{index=6}
     -- import/override with your plugins
     { import = "plugins" },
   },
@@ -30,7 +40,7 @@ require("lazy").setup({
     version = false, -- always use the latest git commit
     -- version = "*", -- try installing the latest stable version for plugins that support semver
   },
-  install = { colorscheme = { "tokyonight", "habamax" } },
+  install = { colorscheme = { "catppuccin", "mocha" } },
   checker = {
     enabled = true, -- check for plugin updates periodically
     notify = false, -- notify on update
