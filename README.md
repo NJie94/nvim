@@ -88,7 +88,7 @@ brew install \
 
 ```
 
-(Optional) If Homebrew suggests enabling shell integration for fzf, follow its post-install message.
+If Homebrew suggests enabling shell integration for fzf, follow its post-install message.
 
 ---
 
@@ -117,7 +117,7 @@ If you compile native extensions (like telescope-fzf-native), install one of:
 - MSYS2 (make/gcc), or
 - LLVM/Clang toolchain
 
-For many people, CMake + Build Tools is enough.
+For most people, CMake + Build Tools is enough.
 
 ---
 
