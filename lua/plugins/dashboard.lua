@@ -85,13 +85,14 @@ return {
       }
 
       opts.dashboard.sections = {
-        { section = "header" },
-        function()
-          local cwd = vim.fn.fnamemodify((vim.uv or vim.loop).cwd(), ":~")
-          return {
-            { title = "󰉋  " .. cwd, padding = 1 },
-          }
-        end,
+        -- { section = "header" },
+        -- function()
+        --   local cwd = vim.fn.fnamemodify((vim.uv or vim.loop).cwd(), ":~")
+        --   -- local cwd = vim.fn.fnamemodify(vim.fn.getcwd(), ":~")v
+        --   return {
+        --     { title = "󰉋  " .. cwd, padding = 1 },
+        --   }
+        -- end,
         { section = "keys", gap = 1, padding = 1 },
         { section = "startup" },
       }
