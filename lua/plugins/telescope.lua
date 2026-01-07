@@ -1,7 +1,7 @@
 return {
   {
     "nvim-telescope/telescope.nvim",
-    tag = "*", -- Telescope README recommends pinning to a release tag :contentReference[oaicite:3]{index=3}
+    tag = false, -- Telescope README recommends pinning to a release tag :contentReference[oaicite:3]{index=3}
     dependencies = {
       "nvim-lua/plenary.nvim", -- required :contentReference[oaicite:4]{index=4}
       { "nvim-telescope/telescope-fzf-native.nvim", build = "make" }, -- recommended native sorter :contentReference[oaicite:5]{index=5}
